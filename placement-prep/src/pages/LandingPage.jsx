@@ -1,6 +1,6 @@
+import { Link, useNavigate } from 'react-router-dom';
+import { Code, Video, BarChart3, Rocket } from 'lucide-react';
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Code, Video, BarChart3 } from 'lucide-react';
 
 const LandingPage = () => {
     const navigate = useNavigate();
@@ -33,12 +33,12 @@ const LandingPage = () => {
                 <p className="text-xl text-slate-600 mb-10 max-w-2xl">
                     Practice, assess, and prepare for your dream job with our comprehensive placement readiness platform.
                 </p>
-                <button
-                    onClick={() => navigate('/dashboard')}
-                    className="bg-primary text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-all shadow-lg"
+                <Link
+                    to="/dashboard"
+                    className="bg-primary text-white px-8 py-3 rounded-xl font-bold text-lg hover:translate-y-[-2px] hover:shadow-xl transition-all flex items-center gap-2 group shadow-lg"
                 >
-                    Get Started
-                </button>
+                    Get Started <Rocket className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
             </section>
 
             {/* Features Grid */}

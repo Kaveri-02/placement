@@ -5,12 +5,12 @@ import {
     HelpCircle, ChevronLeft, Download, Copy,
     Check, Info, Sparkles, Wand2, Building2
 } from 'lucide-react';
-import { updateHistoryEntry } from '../utils/analysisEngine';
+import { updateHistoryEntry, getLatestAnalysis } from '../utils/analysisEngine';
 
 const Results = () => {
     const location = useLocation();
     const navigate = useNavigate();
-    const [entry, setEntry] = useState(location.state?.entry);
+    const [entry, setEntry] = useState(() => location.state?.entry || getLatestAnalysis());
     const [copyStatus, setCopyStatus] = useState('');
 
     // Local state for skill confidence to ensure fast UI updates

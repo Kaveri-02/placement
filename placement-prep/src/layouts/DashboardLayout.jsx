@@ -10,6 +10,7 @@ const DashboardLayout = () => {
         { name: 'Assessments', path: '/dashboard/assessments', icon: <ClipboardCheck className="w-5 h-5" /> },
         { name: 'Resources', path: '/dashboard/resources', icon: <Library className="w-5 h-5" /> },
         { name: 'Profile', path: '/dashboard/profile', icon: <CircleUser className="w-5 h-5" /> },
+        { name: 'Project Proof', path: '/prp/proof', icon: <ClipboardCheck className="w-5 h-5 text-primary" /> },
     ];
 
     return (

@@ -4,7 +4,7 @@ import {
     Radar, RadarChart, PolarGrid, PolarAngleAxis,
     PolarRadiusAxis, ResponsiveContainer
 } from 'recharts';
-import { Calendar, ChevronRight, PlayCircle, Search, Sparkles } from 'lucide-react';
+import { Calendar, ChevronRight, PlayCircle, Search, Sparkles, Info } from 'lucide-react';
 import { analyzeJD, saveAnalysis, getLatestAnalysis } from '../utils/analysisEngine';
 
 // --- UI Components ---
@@ -136,8 +136,7 @@ const Dashboard = () => {
                                 </div>
                                 <button
                                     type="submit"
-                                    disabled={!formData.jd}
-                                    className="w-full bg-primary text-white py-5 rounded-xl font-bold text-lg flex items-center justify-center gap-3 hover:translate-y-[-2px] hover:shadow-lg transition-all disabled:opacity-50 disabled:translate-y-0 disabled:shadow-none"
+                                    className="w-full bg-primary text-white py-5 rounded-xl font-bold text-lg flex items-center justify-center gap-3 hover:translate-y-[-2px] hover:shadow-lg transition-all active:scale-[0.98]"
                                 >
                                     <Search className="w-5 h-5" /> Start Deep Analysis
                                 </button>
