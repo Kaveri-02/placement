@@ -33,12 +33,12 @@ const LandingPage = () => {
                 <p className="text-xl text-slate-600 mb-10 max-w-2xl">
                     Practice, assess, and prepare for your dream job with our comprehensive placement readiness platform.
                 </p>
-                <Link
-                    to="/dashboard"
-                    className="bg-primary text-white px-8 py-3 rounded-xl font-bold text-lg hover:translate-y-[-2px] hover:shadow-xl transition-all flex items-center gap-2 group shadow-lg"
+                <button
+                    onClick={() => navigate('/dashboard')}
+                    className="bg-primary text-white px-10 py-4 rounded-2xl font-black text-xl hover:translate-y-[-4px] hover:shadow-2xl transition-all flex items-center gap-3 group shadow-xl active:scale-95"
                 >
-                    Get Started <Rocket className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
+                    Get Started <Rocket className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                </button>
             </section>
 
             {/* Features Grid */}

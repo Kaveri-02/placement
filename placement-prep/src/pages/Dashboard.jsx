@@ -138,7 +138,7 @@ const Dashboard = () => {
                                     type="submit"
                                     className="w-full bg-primary text-white py-5 rounded-xl font-bold text-lg flex items-center justify-center gap-3 hover:translate-y-[-2px] hover:shadow-lg transition-all active:scale-[0.98]"
                                 >
-                                    <Search className="w-5 h-5" /> Start Deep Analysis
+                                    <Search className="w-5 h-5" /> Get Started: Analyze JD
                                 </button>
                             </form>
                         </CardContent>
