@@ -1,0 +1,11 @@
+{
+    "buildCommand": "cd placement-prep && npm install && npm run build",
+    "outputDirectory": "placement-prep/dist",
+    "framework": "vite",
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}
